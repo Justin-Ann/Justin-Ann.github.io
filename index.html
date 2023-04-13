@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="author" content="Justin Ann J. Hernandez">
+    <!--BSCS 1-YB-1
+    04-10-2023 - 11:13 PM -->
+
+    <title>Justin Ann | Portfolio</title>
+ 
+    <link rel = "icon" href = "https://www.4shared.com/img/ouij0qsifa/s25/187640e3f20/j_ann" type = "image/x-icon"> <!--Icon for the page-->
+
+    <!--Below are used to link to various CSS stylesheets that are used to style the web page. Each line sets the rel attribute to "stylesheet" 
+        to indicate that this is a stylesheet, and the href attribute specifies the URL of the stylesheet-->
+
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!--For creating icons and other graphics-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--For creating responsive web designs-->
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css"> <!--For animating headlines on the web page using jQuery-->
+    <!--These are stylesheets for creating a carousel (slideshow) of images or other content-->
+    <link rel="stylesheet" href="css/owl.carousel.css"> 
+    <link rel="stylesheet" href="css/owl.theme.default.css"> 
+    <link rel="stylesheet" href="css/magnific-popup.css"> <!--For creating popup windows on the web page-->
+    <link rel="stylesheet" href="css/line-icons.min.css"> <!--For creating line icons-->
+    <link rel="stylesheet" href="css/style.css"> <!--This is the main stylesheet for the web page, which contains custom styles specific to the web page-->
+    <link rel="stylesheet" href="css/responsive.css"> <!--For making the web page responsive to different screen sizes and devices-->
+    <link rel="stylesheet" href="css/simple-scrollbar.css"> <!--For customizing scrollbars on the web page-->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZCVPEVVXS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LZCVPEVVXS');
+    </script>
+</head>
+
+<body>
+    <!--To create a loading animation that is displayed before the content is loaded-->
+    <div class="loader_bg">
+        <div class="loader">
+        </div>
+    </div>
+    <!--To create the navigation bar that is fixed to the top of the webpage-->
+    <header class="nav-area navbar-fixed-top"> <!--Ensures that the navigation bar remains fixed at the top of the viewport while the user scrolls down the page-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-menu"> <!--To create a container for the navigation bar items-->
+                        <div class="navbar navbar-cus"> <!--To create the actual navigation bar-->
+                            <div class="navbar-header"> <!--Header section of the navigation bar-->
+                                <!--To create the website's logo, which is a hyperlink that navigates to the website's homepage (indicated by "./")-->
+                                <a href="./" class="navbar-brand"><span class="logo" data-value="Justin Ann">Justin Ann</span></a>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <!--To create a toggle button for the navigation menu on smaller screens-->
+                                    <span class="sr-only">Toggle navigation</span> <!--To add an accessible label for screen readers to inform the users about the toggle button's functionality-->
+                                    <!--To create the lines that represent the toggle button's functionality-->
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse"> <!--For the navigation bar items when the toggle button is clicked-->
+                                <nav>
+                                    <!--Unordered list for the navigation bar items-->
+                                    <!--Class aligns the navigation items to the right of the navigation bar-->
+                                    <ul class="nav navbar-nav navbar-right"> 
+                                        <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
+                                        <li><a class="smooth-menu" href="#about">About</a></li>
+                                        <li><a class="smooth-menu" href="#interests">Interest</a></li>
+                                        <li><a class="smooth-menu" href="#resume">Education</a></li>
+                                        <li><a class="smooth-menu" href="#testimonial">Testimonial</a></li>
+                                        <li><a class="smooth-menu" href="#contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--This code block creates a banner area on a web page, which includes a background effect created by the particles-js library. 
+        The banner is contained within a div with class "banner-area" and an ID of "home"-->
+    <div class="banner-area" id="home">
+        <div id="particles-js"></div> <!--Contains the particles-js library code that generates the background effect-->
+        <div class="banner-table"> <!--To center the content within the banner area-->
+            <div class="banner-table-cell"> <!--To vertically center the content within the banner area-->
+                <div class="welcome-text"> <!--Contains the main content of the banner. This div includes a container and row to create a responsive grid layout-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <section class="intro animate-scale"> <!--This line starts a new section element with a class of "intro" and "animate-scale". 
+                                                                            It's likely used for styling or scripting purposes-->
+                                    <div class="img-area">
+                                        <img src="https://www.4shared.com/img/lwLK0lz4ku/s25/1876412afd8/jus_ann" size="1920x1280"alt="me">   
+                                    </div>
+                                    <h3>Justin Ann J. Hernandez</h3>
+                                    <h1 class="ah-headline">
+                                        <span class="ah-words-wrapper">
+                                            <b class="is-visible">Web Developer</b>
+                                            <b>Information Architect</b>
+                                            <b>Full-Stack Developer</b>
+                                        </span>
+                                    </h1>
+                                    <!--Social icon section with an unordered list containing five list items, each with a link to a different social media profile-->
+                                    <div class="social-icon">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/justin.ann.917/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="https://twitter.com/notyour__J_Ann" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="https://www.instagram.com/a_protacioo/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                                            <li><a href="https://github.com/Justin-Ann" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+                                            <li><a href="mailto:justinannhernandez0@gmail.com" target="_blank" title="Google"><i class="fa fa-google"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <div class="clearfix"></div>
+                                <!--This will scroll the page down to a section with an ID of "about" when clicked. This link includes a nested span with a class 
+                                    of "mouse" that contains another span with a class of "mouse-movement" that creates a visual effect when hovering over the link.-->
+                                <a class="mouse-scroll hidden-xs dadada" href="#about">
+                                    <span class="mouse">
+                                        <span class="mouse-movement"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--The code is for an "About" section of a webpage. It includes a container with two columns, one for an image and the other for text information-->
+    <div class="about-area section-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="stack">
+                        <img src="https://www.4shared.com/img/4f_cCWGcfa/s25/18763ed8ff0/02220003886" size="400x500" alt="about image">
+                        
+                    </div>
+                </div>
+                <!--The heading displays a greeting and the author's name, and the paragraph provides information about the author, 
+                    their values, and their intellectual curiosity-->
+                <div class="col-md-7 col-md-offset-1 col-sm-12">
+                    <div class="about-right">
+                        <h2>Hello!</h2>
+                        <p>I am <span>Justin Ann J. Hernandez</span>, a 2nd year student in Our Lady of Fatima University taking
+                            Bachelor of Science in Computer Science. I sometimes known as <span>Justrica Protacio</span> on social medias. 
+                            I am an intellectual who takes time to learn and grow through education, thought, and understanding. 
+                            I am more than just a person who has knowledge of something. I value the truth, reality, and questioning all the things. 
+                            I am more than just knowing things. It's also about actively seeking better questions and answers. 
+                            Furthermore, I am intellectual by default to some degree or another because I am constantly striving to understand 
+                            the world around us through active questioning and searching for deeper meaning.</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="about-list">
+                                    <li> <span class="title">Name</span> <span class="value">Justin Ann J. Hernandez</span> </li>
+                                    <li> <span class="title">Age</span> <span class="value">20 Years old</span> </li>
+                                    <li> <span class="title">Email</span> <span class="value">justinannhernandez0@gmail.com</span> </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="about-list">
+                                    <li> <span class="title">Phone</span> <span class="value">+63 9952 654 156</span> </li>
+                                    <li> <span class="title">Address</span> <span class="value">Manila, Philippines</span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--A div with a class of "Button" containing two anchor tags, one linking to a section with the id of "skills-bd" and another linking to the author's CV on Google Drive-->
+                        <div class="Button">
+                            <a href="#skills-bd" class="btn btn-border-3 smooth-menu">MY SKILLS</a>
+                            <a href="https://drive.google.com/file/d/1VxVKIU6mwHu3pP2z-CV42L15mA6Jr9Md/view?usp=sharing" class="btn effectBtn" data-before-effect-link-text="Click" target="_blank"><span>MY CV</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This creates a visually appealing section of a web page that displays information about interests in a grid layout with images and descriptions.-->
+    <div class="interests-area section-padding" id="interests">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>My <span>Interest</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 interest">
+                    <div class="interest-box"> <!--Contains an <img> element with the source of an image related to the interest, and height and width attributes for sizing purposes-->
+                        <!--These elements are used to create the angled borders around the image and text-->
+                        <span class="after"></span>
+                        <span class="before"></span>
+                        <img src="https://www.4shared.com/img/8T9YqHApjq/s25/1876c702a98/badminton__2_" height="100" width="100">
+                        <div class="interest-content"> <!--This element contains a title and description of the interest-->
+                            <h4>Badminton</h4>
+                            <p>I find badminton enjoyable. Whether it's the feeling of hitting the shuttlecock just right, 
+                                the thrill of a close match, or the satisfaction of improving my skills, playing badminton is indeed a fun and rewarding experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 interest">
+                    <div class="interest-box">
+                        <span class="after"></span>
+                        <span class="before"></span>
+                        <img src="https://www.4shared.com/img/eBW95eSjge/s25/18771409e68/poem" height="100" width="100">
+                        <div class="interest-content">
+                            <h4>Poems</h4>
+                            <p>Poems encourage me to reflect on my own experiences and thoughts. By reading a poem, 
+                                I gain new insights into myself or the world around me, helping me to better understand my thoughts and feelings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 interest">
+                    <div class="interest-box">
+                        <span class="after"></span>
+                        <span class="before"></span>
+                        <img src="https://www.4shared.com/img/RYn_XBS3ge/s25/18771499748/series" height="100" width="100">
+                        <div class="interest-content">
+                            <h4>Watching Series</h4>
+                            <p>One of the primary reasons why I watch series is for entertainment. Series can be an escape from reality and 
+                                offer a way to relax and unwind after a long day. They can also provide a sense of enjoyment and pleasure. Furthermore,
+                                it can create a sense of shared experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 interest">
+                    <div class="interest-box">
+                        <span class="after"></span>
+                        <span class="before"></span>
+                        <img src="https://www.4shared.com/img/iTTjt_oWge/s25/18771523650/hiking" height="100" width="100">
+                        <div class="interest-content">
+                            <h4>Hiking</h4>
+                            <p>Hiking provides mental health benefits. This is also a way for me to 
+                                disconnect from technology and the stresses of everyday life and reconnect with myself and nature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 interest">
+                    <div class="interest-box">
+                        <span class="after"></span>
+                        <span class="before"></span>
+                        <img src="https://www.4shared.com/img/tdYjca_7ge/s25/18771590480/dog" height="100" width="100">
+                        <div class="interest-content">
+                            <h4>Dog</h4>
+                            <p>Dogs provide emotional support to me, particularly with my mental health conditions. 
+                                The presence of a dog can help me to reduce my stress and anxiety and provide a sense of comfort and grounding.
+                            I also enjoy the company of my furry friends.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 interest">
+                    <div class="interest-box">
+                        <span class="after"></span>
+                        <span class="before"></span>
+                        <img src="https://www.4shared.com/img/Q0Vb7-mQku/s25/187716368a8/roadtrip" height="100" width="100">
+                        <div class="interest-content">
+                            <h4>Roadtrips</h4>
+                            <p>Road trips give me a sense of freedom and independence. I can travel at my own pace, 
+                                choose my route, and stop wherever I please. It is a liberating experience for me who feels confined 
+                                by my daily routine or responsibilities.</p>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--These creates a skills section with skill bars for various programming languages-->
+    <div id="skills-bd" class="skills-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>My <span>Skills</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-text-right">
+                        <div id="skills">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="col-md-12">
+                                        <div class="skillbar" data-percent="85%"> 
+                                            <!--This will create a heading for the skill bar with the name of the programming language.-->
+                                            <h6 class="skillbar-title">Python</h6> 
+                                            <!--This will create a subheading for the skill bar with the percentage of proficiency-->
+                                            <h6 class="skillbar-percent">85%</h6> 
+                                            <!--This will create a container for the progress bar-->
+                                            <div class="skillbar-bar">
+                                                <!--This will create the progress bar with a width that corresponds to the percentage of proficiency-->
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="skillbar" data-percent="60%"> 
+                                            <h6 class="skillbar-title">CSS</h6> 
+                                            <h6 class="skillbar-percent">60%</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="skillbar" data-percent="60%"> 
+                                            <h6 class="skillbar-title">HTML</h6> 
+                                            <h6 class="skillbar-percent">65%</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-md-12">
+                                        <div class="skillbar" data-percent="70%"> 
+                                            <h6 class="skillbar-title">C++</h6> 
+                                            <h6 class="skillbar-percent">70%</h6> 
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="skillbar" data-percent="80%"> 
+                                            <h6 class="skillbar-title">C</h6> 
+                                            <h6 class="skillbar-percent">80%</h6> 
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="skillbar" data-percent="85%"> 
+                                            <h6 class="skillbar-title">SQL</h6> 
+                                            <h6 class="skillbar-percent">85%</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This defines a section of a web page for displaying the educational background-->
+     <!--Contain the name of the educational institution, the degree or level attained, and the date range of attendance respectively-->
+    <div id="resume" class="experience-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>My <span>Education</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="resumes">
+                        <li class="resume-item expr">
+                            <!--Contains a hyperlink to the website of the educational institution. The "target" attribute is set to "_blank" to open the link in a new tab-->
+                            <h3><a href="https://www.fatima.edu.ph/" target="_blank"> Our Lady of Fatima University</a></h3>
+                            <h4>Bachelor of Computer Science</h4>
+                            <h5>2022 - Present</h5>
+                        </li>
+                        <li class="resume-item expr">
+                            <h3><a href="https://www.hasc.com.ph/" target="_blank">Holy Angel School of Caloocan, Inc.</a></h3>
+                            <h4>Junior and Senior High School</h4>
+                            <h5>2016 - 2021</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="resumes">
+                        <li class="resume-item expr">
+                            <h3><a href="https://mseuf.edu.ph/" target="_blank"> Manuel S. Enverga University Foundation </a></h3>
+                            <h4>Bachelor of Science in Computer Science with Specialization in Software Engineering</h4>
+                            <h5>2021 - 2022</h5>
+                        </li>
+                        <li class="resume-item expr">
+                            <h3><a href="https://www.facebook.com/PagbilaoAcademyInc" target="_blank">Pagbilao Academy, Inc.</a></h3>
+                            <h4>Junior High School</h4>
+                            <h5>2015 - 2016</h5>
+                        </li>
+                        <li class="resume-item expr">
+                            <h3><a href="https://www.facebook.com/DepEdTayoPCES108970" target="_blank">Pagbilao Central School</a></h3>
+                            <h4>Elementary</h4>
+                            <h5>2009 - 2015</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Displays a testimonial section with multiple testimonials from different people-->
+<!--Each testimonial has a unique picture, quote, name, and course. The quotes show the admiration and appreciation of the person giving the testimonial to the person being praised-->
+    <div id="testimonial" class="testimonial-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Teammate/ Officer <span>Testimonials</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testimonial-slider owl-carousel">
+                        <div class="single-testimonial">
+                            <div class="testi-comment">
+                                <i class="fa fa-quote-left"></i>
+                                <p>Justin is a great person to work with. She is exceptionally talented and creative. 
+                                   I highly recommend her as a teammate, as she has a huge contribution to the group.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-xs-8">
+                                    <h2>Ruth Naomi Domingo</h2>    
+                                    <h3>BS Psychology at <br><em> Polytechnic University of the Philippines</em></br></h3>    
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <div class="testi-img">
+                                        <img src="https://www.4shared.com/img/Y2z8oO7-jq/s25/18771799c40/ruth" alt="testimonial image">   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="testi-comment">
+                                <i class="fa fa-quote-left"></i>
+                                <p>Justin Ann is a responsible and skillful person. She is flexible and able to do any task given to her. 
+                                    She also easily earned the trust of her co-members as she is a very friendly person. 
+                                    She is a valuable member of our organization as her efforts and dedication to the organization are immeasurable.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-xs-8">
+                                    <h2>Nicole Anne Domingo</h2>    
+                                    <h3>BS Computer Science at <em>Our Lady of Fatima Univerity</em></h3>    
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <div class="testi-img">
+                                        <img src="https://www.4shared.com/img/Js7i1ZU4fa/s25/1877187a218/nicole" alt="testimonial image">    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="testi-comment">
+                                <i class="fa fa-quote-left"></i>
+                                <p>Justin is very professional. She also has a great personality and an effective leader. 
+                                    I would highly recommend her to everyone as a member or a team leader because she is capable of doing so. </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-xs-8">
+                                    <h2>Erica Shane Mora</h2>    
+                                    <h3>BS Industrial Engineering at <br><em>University of Santo Tomas</em></h3>    
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <div class="testi-img">
+                                        <img src="https://www.4shared.com/img/Gar0QE3Lge/s25/1877a285bb0/mors"  alt="testimonial image">    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="testi-comment">
+                                <i class="fa fa-quote-left"></i>
+                                <p>She is a remarkable groupmate, has a strong personality and good leadership with different types of skillset.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-xs-8">
+                                    <h2>Jaco Merhan</h2>    
+                                    <h3>BS Electrical Engineering at <em>Our Lady of Fatima Univerity</em></h3>     
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <div class="testi-img">
+                                        <img src="https://www.4shared.com/img/vVIFwE0Gge/s25/187717af018/jaco" alt="testimonial image">   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="single-testimonial">
+                            <div class="testi-comment">
+                                <i class="fa fa-quote-left"></i>
+                                <p>Justin  is highly respected by our schoolmates before for her willingness to help anyone even she have a tons
+                                     of workloads to do. She balanced her schedule well and make time to do her responsibilities. 
+                                     I would highly recommend Justin as a member or a leader because her skills is proven and tested by many 
+                                     people. She also did not disappoint anyone in making her task because I know that she put her heart in 
+                                     every task she makes.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-xs-8">
+                                    <h2>Mikhail Krizka Louel Timbreza</h2>    
+                                    <h3>BA Political Science at <em>Polytechnic University of the Philippines</em></h3>        
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="testi-img">
+                                        <img src="https://www.4shared.com/img/eTBcmMCEge/s25/18773997ea0/miks" alt="testimonial image">   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-testimonial">
+                            <div class="testi-comment">
+                                <i class="fa fa-quote-left"></i>
+                                <p>Justin is a great leader. She is always on time and never procrastinates. She is also friendly and approachable. Furthermore, she can be relied on for everything.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 col-xs-8">
+                                    <h2>Cyrelle Ann Mirasol</h2>    
+                                    <h3>BS Information Technology at <em>National Univerity</em></h3>     
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <div class="testi-img">
+                                        <img src="https://www.4shared.com/img/tAgnHRTZku/s25/1877a310288/cy_online" alt="testimonial image">   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Consists of a contact section with a form and contact information-->
+    <!--This creates a functional contact form that clears the inputted data after submission to provide a better user experience-->
+<div id="contact" class="contact-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>My <span>Contact</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 box-contact-form">
+                <form id="contact-form" method="post" novalidate="true">
+                    <div class="messages"></div>    
+                    <div class="controls">
+                        <!--This is a div element with classes "messages" and "controls". It contains a row div element with two nested column div elements. 
+                            The column divs contain form-group divs with input fields for name and email. Both input fields are required and have data-error attributes for validation.-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="4" required="required" data-error="Leave a message for me"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <!--This is a row div element with a nested column div element containing a form-group div with a textarea input field for message. The input field is required and has a data-error 
+                                attribute for validation. There is also a button with the text "Send message"-->
+                            <div class="Button">
+                                <button class="btn btn-send" type="submit" name="submit" onclick="resetForm()">Send message</button>
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="Button">
+                <div class="right-contact">
+                    <div class="right-contact-text">
+                        <i class="fa fa-map-marker"></i>
+                        <h2>Address</h2>
+                        <p>Caloocan City, Metro Manila, Philippines</p>    
+                    </div>
+                    <div class="right-contact-text">
+                        <i class="fa fa-phone"></i>
+                        <h2>Contact Number</h2>
+                        <p>+63 9952 654 156</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function resetForm() {
+        document.getElementById("contact-form").reset();
+    }
+</script>
+
+
+    <!--This code represents a footer section of a web page. It contains a container with a row and a column that holds text in the center of 
+        the page. The text includes the name of the web page owner and a link to their Facebook account. It also includes the name of the 
+        university and a copyright notice-->
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <p><a href="https://www.facebook.com/justin.ann.917/" target="_blank">Justin Ann Hernandez</a>
+                        <br>Our Lady of Fatima University</p>  
+                    <p>Copyright © 2023, All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Script tags that include JavaScript files in an HTML document-->
+    <script src="js/jquery-3.2.1.min.js"></script> <!--For simplifying and enhancing client-side scripting on websites-->
+    <script src="js/bootstrap.min.js"></script> <!--For building responsive and mobile-first websites-->
+    <script src="js/jquery.animatedheadline.js"></script> <!--Adds animation effects to text headlines-->
+    <script src="js/jquery.magnific-popup.js"></script> <!--Enables responsive lightbox-style popups for images, videos, and other content-->
+    <script src="js/jquery.waypoints.js"></script> <!--Enables triggering of events based on the scroll position of an element on the page-->
+    <script src="js/jquery.counterup.min.js"></script> <!--Animates a numerical counter for specified elements when they come into view-->
+    <script src="js/owl.carousel.js"></script> <!--Touch-enabled jQuery plugin for creating responsive carousel sliders-->
+    <script src="js/validator.js"></script> <!--Provides validation functions for form input fields-->
+    <script src="js/contact.js"></script> <!--Includes code to handle form submissions and validation for the contact form-->
+    <script src="js/particles.js"></script> <!-- Adds particle effects to a webpage-->
+    <script src="js/app.js"></script> <!--Includes custom code for the particle effects-->
+    <script src="js/main.js"></script> <!--Includes custom JavaScript code specific to the website-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> <!--This script includes the Swiper library, which is a popular JavaScript library used for creating mobile-friendly touch sliders and carousels-->
+    <script>
+        
+        AOS.init(); /*Function initializes the animate on scroll library*/
+        const swiper = new Swiper(".swiper", { /*Function initializes a new Swiper object with options for pagination and navigation buttons*/
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

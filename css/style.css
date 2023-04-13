@@ -1,0 +1,1144 @@
+/*===============================
+	1. Google Fonts
+===============================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600');
+
+/*--- 1. Default css starts ---*/
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #000000;
+    font-weight: 400;
+    scrollbar-color: dark;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #111;
+}
+
+.dark-theme {
+    --primary-color: #111;
+    --secondary-color: #ffffff;
+}
+
+h1,
+h2,
+h3{
+    color: #325003;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+    color: #d6f5a4;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5,
+h6{
+    color: #333333;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    letter-spacing: 0;
+    line-height:1.8;
+}
+
+a{
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:focus{
+    outline:none;
+    text-decoration: none;
+}
+
+a:hover{
+    outline:none;
+    text-decoration: none;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+}
+.section-title h2 span{
+    color: #51dc00;
+}
+.section-title h2 {
+    font-size: 40px;
+    color: #262626;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*--- Default css ends---*/
+
+
+/*-------------- 2. Preloader css starts ---------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #51dc00;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0; }
+    50% {
+        opacity: 1; }
+    100% {
+        transform: scale(1);
+        opacity: 0; }
+}
+/*---------- preloader css ends -------------*/
+
+
+/*--- 3. Mouse animation starts---*/
+
+@-webkit-keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+@keyframes scroll-ani {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+
+.mouse-scroll {
+    position: absolute;
+    left: 48%;
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin-top: 5%;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.mouse-scroll .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 60px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid #80ce1b;
+    border-radius: 23px;
+}
+
+.mouse-scroll .mouse .mouse-movement {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: #89ff02;
+    border-radius: 50%;
+    -webkit-animation: scroll-ani 2s linear infinite;
+    animation: scroll-ani 2s linear infinite;
+}
+/*---mouse animation ends---*/
+
+
+/*---------- 4. Nav area css starts -------------*/
+
+.nav-area{
+    height: 65px;
+}
+
+.nav-area.sticky_navigation{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 23%, rgba(0, 0, 0, 0.5662465669861695) 100%);
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-top: 15px;
+}
+
+.sticky_navigation{
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out ;
+    transition: all 0.4s ease-out ;
+    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.sticky_navigation .main-menu{
+    margin-top: 0;
+}
+
+.sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
+    color: #2aeb11;
+}
+
+.sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
+    color: #262626;
+}
+
+.sticky_navigation .nav li a {
+    color: #262626;
+}
+
+.sticky_navigation .nav li.active a{
+    color: #33dc00;
+}
+
+.sticky_navigation .nav li.active::after {
+    border-bottom: 1px solid #262626;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.sticky_navigation .navbar-brand:hover{
+    color: #ffffff;
+}
+
+.sticky_navigation .logo span {
+    color: #7ddc00;
+}
+
+.main-menu{
+    -webkit-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+}
+
+.navbar{
+    border:0;
+    margin-bottom: 0;
+}
+
+.navbar-brand{
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: block;
+    color: #2af50f;
+    font-weight: 800;
+}
+
+.logo {
+    padding: 5px;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    text-decoration: none;
+    color: #a1dc00;
+}
+
+.navbar-right li{
+    display: inline-block;
+    float: none;
+}
+
+.navbar-right li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.navbar-right li.active a{
+    color: #46dc00;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus{
+    background: none;
+}
+
+.navbar-toggle .icon-bar{
+    background: #1a7503;
+}
+
+#icon {
+    width: 14px;
+    cursor: pointer;
+}
+
+#theme-icon {
+    width: 25px;
+    cursor: pointer;
+}
+/*---------- Nav area css ends -------------*/
+
+
+/*----------- 5. Banner area css starts--------------*/
+
+.banner-area{
+    background-image: url("https://www.4shared.com/img/UZ0RudiXjq/s25/186bf9ef880/blackbg"); /*--edit image--*/
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 100%;
+}
+
+.banner-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    content: '';
+}
+
+.img-area {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #a3f58a;
+    display: inline-block;
+}
+
+.banner-area b{
+    font-weight: 100;
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.banner-table{
+    display: table;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.banner-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.welcome-text .intro h2 {
+    color: #fff;
+    font-size: 85px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.social-icon {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.social-icon ul {
+    margin: 0;
+}
+
+.social-icon ul li {
+    display: inline;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.social-icon ul li a {
+    display: inline-block;
+    width: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    color: #fff;
+}
+
+.social-icon ul li a:hover {
+    background: #51dc00;
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+    background-color: #fff;
+}
+
+.banner-btn {
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 25px;
+    border: 2px solid #fafafa;
+    font-weight: bold;
+}
+.banner-btn:hover, .banner-btn:focus {
+    text-decoration: none;
+    color: #333;
+    background: #fafafa;
+    border-color: #fafafa;
+}
+
+.welcome-text h3 {
+    color: #fff;
+    font-size: 45px;
+}
+/*---------Banner area css ends--------------*/
+
+
+/*---------- 6. About area css starts---------------*/
+
+.stack {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.stack img {
+    color: var(--secondary-color);
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    width: 100%;
+    -moz-box-shadow:    1px 1px 2px rgba(0,0,0,.25);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    box-shadow:         1px 1px 2px rgba(0,0,0,.25);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.stack::before {
+    background: #7af309;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+}
+
+.Button {
+    text-align: center;
+}
+.btn-a {
+    animation-delay: 2s;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 18px;
+    padding: 14px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-animation-delay: 2s;
+    -webkit-transition: background .3s ease-in-out, color .3s ease-in-out;
+    animation-delay: 2s;
+    transition: background .3s ease-in-out, color .3s ease-in-out;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.skill-btn {
+    background: #8aec09;
+    border: 1px solid #7ddc00;
+    color: #fff;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    background: #51dc00;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+}
+
+.btn.btn-border-3::after,
+.btn.btn-border-3::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transition: .5s;
+}
+
+.btn.btn-border-3::after {
+    top: -9px;
+    left: -9px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+
+.btn.btn-border-3::before {
+    bottom: -9px;
+    right: -9px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.btn.btn-border-3:hover {
+    color: #ff0000;
+}
+
+.btn.btn-border-3:hover::after,
+.btn.btn-border-3:hover::before {
+    width: 50px;
+    height: 50px;
+    border-color: #920b0b;
+}
+
+.btn {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.effectBtn {
+    --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+    display: var(--uismLinkDisplay);
+    color: #000000;
+    outline: solid  1px #000000;
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    border: 1px solid #51dc00;
+    background: #ffffff;
+}
+
+.effectBtn::before,
+.effectBtn span{
+    margin: 0 auto;
+    transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    transition-duration: 0.4s;
+}
+
+.effectBtn:hover{
+    background-color: #6bd606;
+}
+
+.effectBtn:hover span{
+    -webkit-transform: translateY(-400%) scale(-0.1,20);
+            transform: translateY(-400%) scale(-0.1,20);
+}
+
+.effectBtn::before{
+    content: attr(data-before-effect-link-text);
+    color: #ff0000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(500%) scale(-0.1,20);
+            transform: translateY(500%) scale(-0.1,20);
+}
+
+.effectBtn:hover::before{
+    letter-spacing: 0.05em;
+    -webkit-transform: translateY(0) scale(1,1);
+            transform: translateY(0) scale(1,1);
+}
+
+.about-area {
+    background: #1b1a1a;
+    color: #d4d2d2;
+    text-align: justify;
+}
+
+.about-text-left {
+    margin-top: 90px;
+}
+
+.about-text-left p {
+    text-align: right;
+    font-size: 15px;
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.about-right h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.about-text-right h3 {
+    color: #fafafa;
+    margin-bottom: 45px;
+}
+
+.about-text-right h6 {
+    color: #ece4e4;
+}
+
+.about-right p span {
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.about-list{
+    list-style: none;
+}
+
+.about-right .about-list li {
+    margin-bottom: 10px;
+}
+.about-right .about-list li .title {
+    position: relative;
+    margin-right: 10px;
+    padding-bottom: 1px;
+    color: #a8a4a4;
+    font-weight: 700;
+}
+.about-right .about-list li .title:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #dac9c9;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.about-right .about-list li .title:after {
+    position: absolute;
+    content: ':';
+    right: -8px;
+}
+.about-right .about-list li .value {
+    position: relative;
+}
+.about-right .about-list li .value:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+/*-------About area css ends--------------*/
+
+
+/*-------- 7. Interest area starts ----------*/
+
+
+.interests-area { /*sd*/
+    background: #41493f;
+    color: #f7f0f0;
+    text-align: center;
+}
+
+.interest-box {
+    padding: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    transition: .9s;
+}
+
+.interest-icon i {
+    font-size: 50px;
+    color: #33dc00;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+.interest-box:hover:after {
+    top: 0;
+    height: 100%;
+    transition: 0.9s;
+}
+
+.interest-box:hover .after {
+    bottom: 0;
+    height: 100%;
+    transition: 0.9s;
+}
+
+.interest-box:hover:before {
+    left: 0;
+    width: 100%;
+    transition: 0.9s;
+}
+
+.interest-box:hover .before {
+    right: 0;
+    width: 100%;
+    transition: 0.9s;
+}
+
+.interest-box:hover:before,
+.interest-box:hover .before {
+    width: 100%;
+    transition: 0.9s;
+}
+
+.interest-box:after {
+    height: 80%;
+    width: 2px;
+    content: '';
+    top: 10%;
+    left: 0px;
+    transition: 0.9s;
+}
+
+.interest-box .before,
+.interest-box .after,
+.interest-box:before,
+.interest-box:after {
+    background: #70f503;
+    position: absolute;
+    transition: 0.9s;
+}
+
+.interest-box:before {
+    height: 2px;
+    width: 80%;
+    content: '';
+    top: 0px;
+    left: 10%;
+    transition: 0.9s;
+}
+
+.interest-box .before {
+    height: 2px;
+    width: 80%;
+    bottom: 0px;
+    right: 10%;
+    transition: 0.9s;
+}
+
+.interest-box .after {
+    height: 80%;
+    width: 2px;
+    bottom: 10%;
+    right: 0px;
+    transition: 0.9s;
+}
+/*-------- Interest area ends ----------*/
+
+
+/*--------- 8. Skills area starts --------------*/
+
+.skills-area .section-title h2{
+    color: #fff;
+}
+
+.skills-area{
+    position: relative;
+    background-image: url("https://www.4shared.com/img/9l98F5ntge/s25/18768e444b8/skills");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.skills-area:before{
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0,0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.skillbar {
+    margin-bottom: 24px;
+    position: relative;
+    width: 100%;
+    display: block
+}
+
+.skillbar .skillbar-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #fff;
+}
+
+.skillbar .skillbar-percent {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.skillbar-bar {
+    background-color: #fff;
+    width: 100%;
+    height: 15px;
+    border-radius: 40px;
+}
+
+.skillbar-bar .skillbar-child {
+    width: 0;
+    height: 100%;
+    background-color: #00dc0b;
+    -webkit-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+    border-radius: 5px;
+}
+/*--------- Skills area ends --------------*/
+
+
+/*-------- 11. Education area starts -------------*/
+
+.fix-down {
+    margin-bottom: -30px;
+}
+
+.resumes {
+    list-style: none;
+}
+
+.resumes li {
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    position: relative;
+}
+
+.resumes li h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.resumes li h4 {
+    font-size: 15px;
+    color: #63dc00;
+}
+
+.resumes li h5 {
+    margin-bottom: 8px;
+}
+
+.resumes li p {
+    margin-bottom: 0;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+}
+/*-------- Education area ends -------------*/
+
+
+/*------- 12. Testimonial area css starts --------*/
+
+.testimonial-area .section-title h2 {
+    color: #fff;
+}
+
+.testimonial-area{
+    background-image: url("https://www.4shared.com/img/9WDK2U3Ojq/s25/18769105210/testimonial");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-area:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+.single-testimonial {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.single-testimonial p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.single-testimonial h2 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.testi-comment i {
+    font-size: 30px;
+    color: #51dc00;
+}
+
+.single-testimonial h3 {
+    margin: 10px 0 0;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.testi-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testi-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.owl-theme .owl-controls{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-dot {
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #ffffff !important;
+    opacity: 0.8;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: #2cdc00 !important;
+}
+/*------- testimonial area ends --------*/
+
+
+/*-------------13. Contact area starts -------------*/
+
+.contact-area{
+    background-color: #77836c;
+}
+
+.contact-area .form-control{
+    border:2px solid #a2a2a2;
+    box-shadow: none;
+    padding: 6px;
+    border-radius: 3;
+    margin-bottom: 30px;
+}
+
+.right-contact-text {
+    margin-bottom: 25px;
+}
+
+.right-contact-text i {
+    color: #3edc00;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-area textarea.form-control{
+    border:2px solid #a2a2a2;
+    padding: 6px;
+    height: 350px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-send {
+    background: #1adc00;
+    color: #ffffff;
+    border-radius: 0;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.right-contact-text h2{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.right-contact-text p{
+    line-height: 21px;
+    letter-spacing: 2px;
+    font-size: 11px;
+    color: #000000;
+}
+/*------------- Contact area ends -------------*/
+
+
+/*--------------16. Footer area starts -------------*/
+
+.footer-area {
+    background: #171717;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.footer-area a{
+    color: #63dc00;
+}
+/*--------------- Footer area ends -------------*/
